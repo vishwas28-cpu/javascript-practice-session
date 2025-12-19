@@ -61,3 +61,8 @@ console.log(5>3 || 10<8);  // true
 console.log(5 & 1);
 console.log(5 | 1);
 
+// what are variable 
+// variable are used to store data in programming
+// you can create a variable using var, let or const keywords
+
+// var - old and risky 
