@@ -66,3 +66,13 @@ console.log(5 | 1);
 // you can create a variable using var, let or const keywords
 
 // var - old and risky 
+// functioned scope hai aur blocks ki respect nhi karta
+// redclare aur reassign hota hai
+
+// let - new and safe
+// block scope hai
+// sirf reassign hota hai aur redclare nhi hota
+
+// const - new and safest
+// block scope hot hai
+// ek baar value assign ki toh chang nhi kar sakte
