@@ -68,11 +68,74 @@ console.log(5 | 1);
 // var - old and risky 
 // functioned scope hai aur blocks ki respect nhi karta
 // redclare aur reassign hota hai
+// var hoisted hota hai aur uski default value undifined hoti hai
 
 // let - new and safe
 // block scope hai
 // sirf reassign hota hai aur redclare nhi hota
+// let hoisted hota hai par uski value undifined nhi hoti
+// temporal dead zone hote hai
 
 // const - new and safest
 // block scope hot hai
 // ek baar value assign ki toh chang nhi kar sakte
+// const hoisted hota hai par uski value undifined nhi hai
+// temporal dead zone hote hai
+
+//data types
+// there are 2 ypes of data type 
+// primitive and reference
+
+// primitive data types : dierectly store the value 
+// 1, number - ye sirf number hota hai ex 1, 2, 3, 13, 15, 55.
+// 2. string - ye text hota hai jo single ya double quote me hota hai ex "hello", 'world' .
+// 3. boolean - ye true ya false hota hai ex true, false .
+// 4. undefined - jab variable ko value assign nhi kiya jata toh wo undefined hota hai ex let a; console.log(a); // undefined
+// 5. null - ye empty value hota hai ex let b = null; console.log(b); // null
+// 6. symbol - ye unique identifier hota hai ex let sym = Symbol('id'); console.log(sym); // Symbol(id)
+// 7. bigint - ye large number ko represent karta hai ex let big = 1234567890123456789012345678901234567890n; console.log(big); // 1234567890123456789012345678901234567890n
+
+// reference data types : ye value ka reference store karta hai
+// 1. function - ye reusable code block hota hai ex function greet() { console.log("Hello"); } greet(); // Hello
+// 2. object - ye key-value pairs ka collection hota hai ex let obj = { name: "John", age: 30 }; console.log(obj); // { name: "John", age: 30 }
+// 3. array - ye ordered collection of items hota hai ex let arr = [1, 2, 3, 4, 5]; console.log(arr); // [1, 2, 3, 4, 5]
+
+// typeof operator : data type check karne ke liye use hota hai
+// typeof 42; // "number"
+// typeof "hello"; // "string"
+// typeof true; // "boolean"
+// typeof undefined; // "undefined"
+// typeof null; // "object" (ye ek bug hai JavaScript me)
+// typeof [] ; // "object"
+// typeof {}; // "object"
+// typeof function() {}; // "function"
+
+
+// type conversion : ek data type ko dusre data type me convert karna
+// "5" + 1; // "51" (string concatenation) plus ka meaning addition aur concatenation dono ho sakta hai
+// "5" - 1; // 4 (string to number conversion)
+// true + 1; // 2 (boolean to number conversion)
+// false + 1; // 1 (boolean to number conversion)
+// null + 1; // 1 (null to number conversion)
+// undefined + 1; // NaN (undefined cannot be converted to number)
+
+
+// loose vs strict equality
+// == ye sirf value dekhta hai aur datatype ko ignore karta hai
+// === ye value aur datatype dono ko check karta hai
+// exxamples:
+// 5 == "5"; // true
+// 5 === "5"; // false
+// always use strict equality (===) to avoid unexpected type coercion issues
+
+// naN : not a number
+// ye ek special value hai joh indicate karte hai voh number nahi hai par iska typeof number hota hai
+
+// truthy and falsy values
+// truthy values : jo values condition me true evaluate hoti hai
+// ex : 1, "hello", [], {}, function() {}
+// falsy values : jo values condition me false evaluate hoti hai
+// ex : 0, "", null, undefined, NaN, false
+
+// operators
+// operators special symbols hote hai jo variables aur values ke upar operations perform karte hai
