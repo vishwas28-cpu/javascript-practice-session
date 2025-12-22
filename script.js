@@ -139,3 +139,301 @@ console.log(5 | 1);
 
 // operators
 // operators special symbols hote hai jo variables aur values ke upar operations perform karte hai
+
+// arthmetic operators : +, -, *, /, %, ++, --
+
+// assignment operators : =, +=, -=, *=, /=, %=
+
+// comparison operators : ==, ===, !=, !==, >, <, >=, <=
+
+// logical operators : &&, ||, !
+
+// ternary operator : condition ? expr1 : expr2
+
+// unary operators : typeof, delete, void
+
+// typeof operator : data type check karne ke liye use hota hai
+
+
+// control flow 
+// control flow decide karega ki code kaunsa part execute hoga aur kab hoga
+//if, else if, else
+// example:
+// if (condition1) {
+// runs if condition1 is true
+// } else if (condition2) {
+// runs if condition2 is true
+// } else {
+// runs if both condition1 and condition2 are false
+// }
+
+// switch case
+// bohot saare values ko compare karne ke liye use hota hai
+// switch case saare cases ko check agar break na diya jaye toh sab execute ho jayega
+// example:
+// let fruit = "apple";
+// switch (fruit) {
+//   case "banana":
+// console.log("yellow");
+//     break;
+//   case "apple":
+// console.log("red");
+// break;
+// default:
+// console.log("unknown color");
+// }
+
+// early return pattern
+// functions mai use hota hai jaldi se function se bahar nikalne ke liye agar koi conditions fail ho jati hai
+// example:
+// function checkAge(age) {
+// if (age < 18) return "denied";
+// return "allowed";
+// }
+
+
+// loops
+// loops koi code baar baar chalene ke liye use hote hai bina koi code likhe
+
+// for loop
+// example:
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
+
+// while loop
+// condition check karta hai chalene se pehle
+// example:
+// let i = 0;
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+// do while loop
+// ek baar chaltha hai agar condition false bhi ho toh bhi
+// example:
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 5);
+
+// break and continue
+// break loop ko pura terminate kar deta hai
+// continue current iteration ko skip kar deta hai aur next iteration pe chala jata hai
+// example:
+// for (let i = 0; i < 5; i++) {
+// if (i === 3) continue; // skip 3
+// console.log(i);
+// }
+
+// for-of- arrays aur strings
+// yeh iterable (arrays, strings) pe use hota hai
+// example:
+// for (let char of "hello") {
+//   console.log(char);
+// }
+
+// forEach - arrays
+// cleaner than (for) for arrays, but you cannot break/continue
+// example:
+// let nums = [10, 20, 30];
+// nums.forEach((num) => {
+//   console.log(num);
+// });
+
+// for-in - objects (arrays if needed)
+// objects ke keys pe iterate karta hai
+// example:
+// let user = {name: "harsh"; age: 25};
+// for (let key in user) {
+//   console.log(key, user[key]);
+// }
+
+// mindset for loops
+// loops = data processor
+// use the right loop for the job:
+// for = best for number/indexes
+// for-of = for arrays value
+// for-in = for objects keys
+// while = for unpredictable conditions
+
+// functions
+// functions reusable code blocks hote hai jo specific task perform karte hai
+
+// function declaration
+// function greet() {
+// console.log("welcome to sheryians");
+// }
+// greet(); // welcome to sheryians
+
+// parameters vs arguments
+// example:
+// function greet(name){
+// console.log("hello " + name);
+// }
+// greet("harsh");
+// name is parameter
+// "harsh" is argument
+
+// return value
+// example:
+// function sum(a, b) {
+// return a + b;
+// }
+// let result = sum(5, 10); // 15
+
+// function expression
+// const greet = function () {
+// console.log("hello world");
+// };
+// function ko variable me store karte hai
+// ye hoisted nhi hota
+
+// arrow functions
+// const greet = () => {
+// console.log("hi!");
+// };
+// cleaner syntax
+
+// default parameters
+// a = 1 --> default parameter
+// function multiply(a = 1, b = 2) {
+// return a * b;
+// }
+
+// rest parameters
+// ....nums --> rest parameter
+// function sum(...nums){
+// return nums.reduce((acc, curr) => acc + curr, 0);
+// }
+
+// spread operator
+// ...nums (in calls) --> spread operator
+// let nums = [1, 2, 3];
+// console.log(...nums); 
+
+// first class functions
+// javascript funnction ko value ki tarah treat karta hai
+// functions can be assigned to variables, passed as arguments, and returned from other functions
+// example:
+// function shout(msg) {
+// return msg.toUpperCase();
+// }
+// function processMessage(fn) {
+// console.log(fn("hello"));
+// }
+// processMessage(shout); // "HELLO"
+
+// higher order functions
+// functions joh dusre function ko accept karte hai ya return karta hai 
+// example:
+// function createMultiplier(x) {
+// return function (y) {
+// return x * y;
+// };
+// }
+// const double = createMultiplier(2);
+// console.log(double(5)); // 10
+
+// closures and lexical scope
+// closures : ek function joh apne parent functions ko remember karta hai uske baad bhi jab parent function finiish ho chuka hai
+// function outer() {
+// let count = 0;
+// return function inner() {
+// count++;
+// console.log(count);
+// };
+// }
+// const counter = outer();
+// counter(); // 1
+// counter(); // 2
+// even after outer() has finished, inner() remembers count
+
+// iffe - immediately invoked function expression
+// yeh function private scope create karta hai
+// (function(){
+// console.log("runs immediately");
+// })();
+
+// hoisting: declaration vs expression 
+// function declarations hoisted hote hai
+// function expressions hoisted nhi hote
+// example:
+// hello(); // works
+// function hello() {
+// console.log("hi");
+// }
+
+// greet(); // error
+// const greet = function() {
+// console.log("hello");
+// };
+
+// arrays
+// arrays ek row of boxes ki tarah hote hai jahah har ek box mai value store hoti hai aur index hoti hai(1,2,3...)
+// arrays apko multiple values ek variable mai store karene mai help karte hai - strings, numbers, booleans, objects, functions, etc.
+// let fruits = ["apple", "banana", "cherry"];
+
+// creating and accessing arrays
+// let numbers = [10, 20, 30, 40, 50];
+// console.log(numbers[0]); // 10
+// console.log(numbers[2]); // 30
+// index 0 se start hota hai 
+// you can access, update, and manipulate array elements using their index positions.
+
+// common array methods
+// modifiers (change the original array):
+// let arr = [1, 2, 3];
+// arr.push(4); // add to end
+// arr.pop(); // remove from end
+// arr.unshift(0); // add to start
+// arr.shift(); // remove from start
+// arr.splice(1, 1, "a"); // at index 1, remove 1 item, add "a"
+// aar.reverse(); // reverse the array
+
+// extractors (do not change original array):
+// let newArr = arr.slice(1, 3); // copy from index 1 to 2
+// arr.sort(); // sort the array
+
+// iteration methods:
+
+// map()
+// returns a new array with modified values.
+// let prices = [100, 200, 300];
+// let taxes = prices.map(p => p *1.18);
+
+// filter()
+// filter out elements based on condition.
+// let numbers = [1, 2, 3, 4, 5];
+// let evens = numbers.filter(n => n % 2 === 0);
+
+// reduce()
+// reduce array to a single value.
+// let total = numbers.reduce((acc, curr) => acc + curr, 0);
+
+// forEach()
+// performs action for each element.
+// nums.forEach(n => console.log(n));
+
+// find(), some(), every()
+// nums.find(n => n > 2); // first match
+// nums.some(n => n > 5); // at least one true
+// nums.every(n => n > 0); // all true
+
+// destructuring & spread
+// let [first, second] = ["a", "b", "c"];
+// let newArr = [...nums, 99];
+
+// common confusions
+// splice changes original array, slice does not
+// forEach vs map: forEach does not return new array, map does
+// sort() converts values to strings unless compareFn provided:
+// [10,2,3].sort() => // [10,2,3] --> ["10","2","3"] --> wrong order
+// use:
+// arr.sort((a,b) => a-b); // correct numeric sort
+
+// mindset for arrays
+// arrays are structured, transfromable data.
+// you loop over them transform them, filter them, reduce them - all to control what shows up in your ui and logic.~
