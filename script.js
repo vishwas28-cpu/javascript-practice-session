@@ -436,4 +436,85 @@ console.log(5 | 1);
 
 // mindset for arrays
 // arrays are structured, transfromable data.
-// you loop over them transform them, filter them, reduce them - all to control what shows up in your ui and logic.~
+// you loop over them transform them, filter them, reduce them - all to control what shows up in your ui and logic.
+
+// objects
+// objects javascript mai real world records kei tarah hote hai
+// objects key-value pairs ka collection hote hai
+// object structured data store karne mai madad karte hai
+// example:
+// let person = {
+//  name: "harsh",
+//  age: 25,
+//  isStudent: false
+// };
+
+// keys-value structure
+// keys hamesha strings hi hote hai agar tumnhe number likha toh bhi voh string mai convert ho jayega
+// values kisi bhi data type ki ho sakti hai - strings, numbers, booleans, arrays, functions, even other objects
+// console.log(person["name"]); // "harsh"
+// console.log(person.age); // 25
+
+// dot vs bracket notation
+// dot notation : jab key valid identifier ho tab use karte hai
+// bracket notation : jab key variable ho ya special characters ho tab use karte hai
+
+// nesting and deep access
+// objects ke andar objects ya arrays nest kar sakte hai
+// example:
+// let user = {
+//  name: "harsh",
+//  address: {
+//    city: "delhi",
+//    pincode: 110001
+//  }
+// };
+// console.log(user.address.city); // "delhi"
+
+// object destructuring
+// value ko directly extract kar sakte hai
+// let { name, age } = person;
+// nested object ke liye:
+// let { address: { city, pincode } } = user;
+
+// looping through objects
+// for-in loop use karte hai
+// ex: for (let key in person) {
+//  console.log(key, person[key]);
+// }
+// Object.keys(), Object.values(), Object.entries()
+// object.keys(person); // ["name", "age", "isStudent"]
+// object.values(person); // ["harsh", 25, false]
+// object.entries(person); // [["name", "harsh"], ["age", 25], ["isStudent", false]]
+
+// copying objects
+
+// shallow copy : one level deep copy karta hai
+// let newStudent = { ...student };
+// newOne.name = Object.assign({}, student);
+
+// deep copy : pura object copy karta hai nested objects ke sath
+// let deepCopy = JSON.parse(JSON.stringify(student));
+// note: ye method functions aur undefined values ko copy nhi karta sirf plain data types ko copy karta hai
+
+// optional chaining
+// avoid errors jab nested properties undefined hoti hai
+// console.log(user?.address?.city); // "delhi" or undefined if address doesn't exist
+// console.log(user?.contact?.phone); // undefined instead of error
+
+// computed properties
+// variable ko key ki tarah use kar sakte hai
+// let key = "marks";
+// let report = {
+// [key]: 95
+// };
+
+// common confusions
+// shallow copy copies only first level
+// for-in includes inherted keys (be catious).
+// delete obj.key remove the property
+// spread ≠ deep copy
+
+// mindset for objects
+// objects are structured state- perfect for modeling anything complex: a user, a product, a blog post, etc.
+// use destructuring, chaining, and dynamic keys wisely.
