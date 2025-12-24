@@ -518,3 +518,9 @@ console.log(5 | 1);
 // mindset for objects
 // objects are structured state- perfect for modeling anything complex: a user, a product, a blog post, etc.
 // use destructuring, chaining, and dynamic keys wisely.
+
+// let person = {
+//  name: "Vishwas",
+// age: 24,
+// city: "Pune"
+//  };
