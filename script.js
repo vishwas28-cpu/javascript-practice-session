@@ -20,6 +20,8 @@
 // const hoisted hota hai par uski value undifined nhi hai
 // temporal dead zone hote hai
 
+// practice qusetion
+
 //data types
 // there are 2 ypes of data type 
 // primitive and reference
