@@ -22,6 +22,25 @@
 
 // practice qusetion
 
+// 1 decalre your name using all three: var a = "vishwas" , let b = "sheryians" ' const c = "mumbai" .
+// var a = "vishwas";
+// let b = "sheryians";
+// const c = "mumbai";
+
+// 2 try reassining them : a = "updated"; b = "updated"; c = "updated";
+// a = "updated"; // works
+// b = "updated"; // works
+// c = "updated"; // error
+
+// 3 create a variable inside curly braces using let and log it outside.
+// { let a = vihwas; }
+// console.log(a);
+
+// 4. write 3 example where const is useful (like pi, baseURL, etc).
+// const pi = 3.14;
+// const baseURL = "https://api.example.com";
+// const gravity = 9.81; // m/s^2
+
 //data types
 // there are 2 ypes of data type 
 // primitive and reference
