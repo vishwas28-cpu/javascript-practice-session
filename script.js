@@ -41,6 +41,7 @@
 // const baseURL = "https://api.example.com";
 // const gravity = 9.81; // m/s^2
 
+//
 //data types
 // there are 2 ypes of data type 
 // primitive and reference
@@ -546,3 +547,6 @@
 // age: 24,
 // city: "Pune"
 //  };
+
+// dom manipulation
+// dom - document object model
