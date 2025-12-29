@@ -41,7 +41,28 @@
 // const baseURL = "https://api.example.com";
 // const gravity = 9.81; // m/s^2
 
-//
+// variable hositing quetions
+
+// a. predict the output: console.log(a); var a = 10;
+// console.log(a);
+// var a = 10 // the answer is undefined 
+
+// b. predict the output : console.log(b); let b = 10;
+// console.log(b);
+// let b = 10;  // the answer is error bcz let is not hoisted like var
+
+// c. predict output of : test() function test() { console.log("hello"); }
+// test();
+// function test() {
+//  console.log("hello");
+// } // the answer is hello bcz function declaration is hoisted
+
+// d. try writting a function expression before initialization and call it :
+// hello();
+// var hello = function() {
+// console.log("hi");
+// }
+
 //data types
 // there are 2 ypes of data type 
 // primitive and reference
@@ -282,6 +303,16 @@
 // for-in = for objects keys
 // while = for unpredictable conditions
 
+// q1. print numbers from 1 to 10 using for loop
+// for (let i = 1; i<11; i++){
+//    console.log(i);
+// }
+
+// q2. print numbers from 10 and 1 using while loop
+for(let i = 10; i>0; i--){
+    console.log(i);
+}
+
 // functions
 // functions reusable code blocks hote hai jo specific task perform karte hai
 
@@ -393,6 +424,8 @@
 // const greet = function() {
 // console.log("hello");
 // };
+
+
 
 // arrays
 // arrays ek row of boxes ki tarah hote hai jahah har ek box mai value store hoti hai aur index hoti hai(1,2,3...)
@@ -550,3 +583,4 @@
 
 // dom manipulation
 // dom - document object model
+
