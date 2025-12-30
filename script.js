@@ -309,9 +309,8 @@
 // }
 
 // q2. print numbers from 10 and 1 using while loop
-for(let i = 10; i>0; i--){
-    console.log(i);
-}
+// for(let i = 10; i>0; i--){
+//    console.log(i);}
 
 // functions
 // functions reusable code blocks hote hai jo specific task perform karte hai
@@ -425,8 +424,58 @@ for(let i = 10; i>0; i--){
 // console.log("hello");
 // };
 
+// q1. what's the differnce between function declartion and expression in terms of hoisting?
+// ans. function declartion hoisted hota hai aur funcion expression hoisted nhi hota
 
+// q2. see the log of function declartion
+// ans. abcd();
+//
+//
+//
+// function abcd(){
+//    console.log("hello");
+// }
 
+// q3. convert this function into arrow function
+// function multiply(a, b) {
+// return a * b;}
+// ans. let multiply = (a, b)=>{
+//    return a * b;
+// }
+
+// q4. so identify parameters and arguments 
+// function welcome(name) {
+// console.log(name);}
+// welcome("harsh");}
+// ans. name is parameter and harsh is argument
+
+// q5. how many parameter does this function have and how many arguments are passed
+//  function sum(a, b, c) {}
+// demo(1, 2);
+// ans. there are 3 parameters and 2 arguments are passed
+
+// q6. predict the output of this code
+// function sayHi(name = "Guest") {
+// console.log("hi", name);}
+// sayHi();
+// ans. hi guest
+
+// q7. what does ...operater mean in parameter
+// function abcd(...val){
+// console.log(val);}
+// abcd(1,2,3,4,5,6);
+// ans ...operator is rest parameter ans it collects all the arguments into an array
+
+// q8. use rest parameter to accept any number of scores and return the total.
+function getScore(...scores) {
+    let total = 0;
+ scores.forEach(function (val){
+    total = total + val;
+ });
+ return total;
+}
+
+console.log(getScore(10, 20, 30, 40));
 // arrays
 // arrays ek row of boxes ki tarah hote hai jahah har ek box mai value store hoti hai aur index hoti hai(1,2,3...)
 // arrays apko multiple values ek variable mai store karene mai help karte hai - strings, numbers, booleans, objects, functions, etc.
