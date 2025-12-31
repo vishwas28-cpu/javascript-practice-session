@@ -467,15 +467,30 @@
 // ans ...operator is rest parameter ans it collects all the arguments into an array
 
 // q8. use rest parameter to accept any number of scores and return the total.
-function getScore(...scores) {
-    let total = 0;
- scores.forEach(function (val){
-    total = total + val;
- });
- return total;
-}
+// function getScore(...scores) {
+//    let total = 0;
+// scores.forEach(function (val){
+//   total = total + val;
+//  });
+// return total;
+// }
+// console.log(getScore(10, 20, 30, 40));
 
-console.log(getScore(10, 20, 30, 40));
+// q9. fix the function using early return
+// function checkAge(age) {
+//   if (age< 18){
+//      console.log("too young ");
+//   } else { console.log("allowed");
+//   }
+// }
+// function checkAge(age) {
+//  if (age < 18) 
+//      return "too young";
+//   return "allowed"; }
+//
+//   console.log(checkAge(20));
+
+
 // arrays
 // arrays ek row of boxes ki tarah hote hai jahah har ek box mai value store hoti hai aur index hoti hai(1,2,3...)
 // arrays apko multiple values ek variable mai store karene mai help karte hai - strings, numbers, booleans, objects, functions, etc.
