@@ -490,6 +490,118 @@
 //
 //   console.log(checkAge(20));
 
+// q10. what the return value of this function
+//function f() {
+//  return; }
+// ans. console.log(f());
+// unndefined
+
+// q11. what does it mean that function are first class citizen ?
+// function are treated as a variable , parameter and value
+
+// q12. can you assign a function to a variable and then call it ? see how.
+// ans. let abcd = function() {
+//    console.log("hello");
+// }
+// abcd();
+
+// q13. pass a function into another function and execute it in inside.
+// function abcd(val) {
+//     val();
+// }
+// abcd(function efg() {
+//    console.log("hello");
+//   })
+
+// q14. what is an higher ordered function
+// ans. when a function returns another function or accept another function in its parameter
+// for example
+//  function abcd() {
+//    return function efg() { 
+//        return "hello";
+//    };
+//  }
+//  let ijk = abcd();
+//  console.log(ijk());
+//     or
+// function abcd(val) {
+//    val();
+//  }
+// abcd( function() {
+//    console.log("hello");
+// });
+
+// q15. identify the higher order function
+// [1, 2, 3].map( function (x) {
+//  return x * 2;
+// } )
+// ans. map is an higher order function.
+
+// q16. pure vs impure function
+// let total = 0;
+// function addToTal(num) {
+// total += num;
+// }
+// ans.since the function increasing the value of outside variable this is impure function
+
+// q17 convert the above function to a pure function
+// let total = 0;
+// function addToTal(num) {
+// total += Number;
+// }
+// ans.let total = 0;
+// function addToTal(num) {
+//    let newtotal = total;
+//    newtotal += num;
+// }
+
+// q18. what is closure ? when is it created?
+// function abcd() {
+//    let val = 0;
+//    return function () {
+//        console.log(val);
+//    };
+//}
+
+// q19. what will log
+// function outer() {
+//    let count = 0;
+//    return function () {
+//        count++;
+//        console.log(count);
+//    };
+// }
+// const counter = outer();
+// counter();
+// counter();
+
+// q20. convert this normal function into IIFE
+// function init() {
+//    console.log("Initialized");
+// }
+// ans. (function init() {
+//    console.log("Initialized");
+// }) ();
+
+// q21. what is the use of IFFE? ? Name one real-world use case.
+// ans. IFFE is use to make private function
+// (function abcd() {
+//     console.log("hello");
+// }) ();
+
+// q22. what will the output abnd why
+// greet ();
+//
+//   var greet = function () {
+//        console.log("hi");
+//    };
+// ans. since this is function expression there will an error
+
+// q23 what will be the output here and why?
+greet();
+function greet() {
+    console.log("hi!");
+}
 
 // arrays
 // arrays ek row of boxes ki tarah hote hai jahah har ek box mai value store hoti hai aur index hoti hai(1,2,3...)
